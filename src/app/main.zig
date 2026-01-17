@@ -149,6 +149,7 @@ fn runCommand(allocator: std.mem.Allocator, argv_items: []const []const u8, stdi
         if (proc.stdin) |stdin_file| {
             try stdin_file.writeAll(data);
             stdin_file.close();
+            proc.stdin = null;
         }
     }
 
