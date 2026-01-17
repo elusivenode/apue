@@ -1,0 +1,17 @@
+Copies and displays data.
+
+Demonstrates redirection of STDIN and STDOUT.
+
+Use either the menu number (which might change) or the full program name.
+
+Usage examples:
+
+./zig-out/bin/cat_c > /tmp/test.txt
+- redirect STDOUT to this file
+- type at the terminal and will be written to this file
+- Ctrl-D (EOF) to stop
+
+./zig-out/bin/cat_c < /tmp/data >> /tmp/test.txt
+- redirect STDIN to /tmp/data
+- redict STDOUT to /tmp/test.txt
+- this would append data from the first file to the seconds
