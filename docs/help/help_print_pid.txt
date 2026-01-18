@@ -1,0 +1,6 @@
+Hello world with a pid.
+
+Usage examples:
+
+6
+./zig-out/bin/print_pid_c
